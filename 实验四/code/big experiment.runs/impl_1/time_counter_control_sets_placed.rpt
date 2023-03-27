@@ -1,0 +1,94 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Thu Jun  3 19:04:46 2021
+| Host         : LAPTOP-QFOIDU1C running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file time_counter_control_sets_placed.rpt
+| Design       : time_counter
+| Device       : xc7a100t
+-----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    16 |
+|    Minimum number of control sets                        |    16 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    76 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    16 |
+| >= 0 to < 4        |     5 |
+| >= 4 to < 6        |     7 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     3 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               1 |            1 |
+| No           | No                    | Yes                    |               7 |            5 |
+| No           | Yes                   | No                     |              18 |            6 |
+| Yes          | No                    | No                     |              12 |            7 |
+| Yes          | No                    | Yes                    |              38 |           14 |
+| Yes          | Yes                   | No                     |              16 |            4 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------+--------------------+-------------------------+------------------+----------------+--------------+
+|       Clock Signal       |    Enable Signal   |     Set/Reset Signal    | Slice Load Count | Bel Load Count | Bels / Slice |
++--------------------------+--------------------+-------------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG           |                    |                         |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG           |                    | started_reg_LDC_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG           |                    | started_reg_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG           | min                | ms[3]_i_3_n_0           |                1 |              1 |         1.00 |
+|  started_reg_LDC_i_1_n_0 |                    | started_reg_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG           | reset_key_IBUF     |                         |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG           | s[3]_i_1_n_0       | ms[3]_i_3_n_0           |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG           | hms[3]_i_1_n_0     | ms[3]_i_3_n_0           |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG           | ms[3]_i_1_n_0      | ms[3]_i_3_n_0           |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG           | ts[3]_i_1_n_0      | ms[3]_i_3_n_0           |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG           | tms[3]_i_1_n_0     | ms[3]_i_3_n_0           |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG           |                    | ms[3]_i_3_n_0           |                3 |              5 |         1.67 |
+|  clk_IBUF_BUFG           | sig_seg[7]_i_1_n_0 |                         |                5 |              8 |         1.60 |
+|  clk_IBUF_BUFG           | reset_key_IBUF     | ctr0[16]_i_1_n_0        |                4 |             16 |         4.00 |
+|  clk_IBUF_BUFG           |                    | ctr_beep[16]_i_1_n_0    |                5 |             17 |         3.40 |
+|  clk_IBUF_BUFG           | started            | ms[3]_i_3_n_0           |                5 |             17 |         3.40 |
++--------------------------+--------------------+-------------------------+------------------+----------------+--------------+
+
+

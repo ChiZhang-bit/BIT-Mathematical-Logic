@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Thu Jun  3 07:27:15 2021
+# Process ID: 24476
+# Current directory: C:/Users/LX/Desktop/big experiment
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17516 C:\Users\LX\Desktop\big experiment\big experiment.xpr
+# Log file: C:/Users/LX/Desktop/big experiment/vivado.log
+# Journal file: C:/Users/LX/Desktop/big experiment\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/LX/Desktop/big experiment/big experiment.xpr}
+update_compile_order -fileset sources_1

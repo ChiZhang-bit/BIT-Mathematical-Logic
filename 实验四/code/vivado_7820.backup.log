@@ -1,0 +1,113 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Jun  2 08:47:56 2021
+# Process ID: 7820
+# Current directory: C:/Users/LX/Desktop/big experiment
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14820 C:\Users\LX\Desktop\big experiment\big experiment.xpr
+# Log file: C:/Users/LX/Desktop/big experiment/vivado.log
+# Journal file: C:/Users/LX/Desktop/big experiment\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/LX/Desktop/big experiment/big experiment.xpr}
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/LX/Desktop/timer.tcl'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/LJXilinx/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:27 ; elapsed = 00:00:17 . Memory (MB): peak = 999.020 ; gain = 0.000
+update_compile_order -fileset sources_1
+file mkdir C:/Users/LX/Desktop/big experiment/big experiment.srcs/sim_1/new
+file mkdir C:/Users/LX/Desktop/big experiment/big experiment.srcs/sim_1/new
+file mkdir C:/Users/LX/Desktop/big experiment/big experiment.srcs/sim_1/new
+file mkdir C:/Users/LX/Desktop/big experiment/big experiment.srcs/sim_1/new
+file mkdir C:/Users/LX/Desktop/big experiment/big experiment.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+file mkdir C:/Users/LX/Desktop/big experiment/big experiment.srcs/sim_1/new
+file mkdir {C:/Users/LX/Desktop/big experiment/big experiment.srcs/sim_1/new}
+close [ open {C:/Users/LX/Desktop/big experiment/big experiment.srcs/sim_1/new/testbench.v} w ]
+add_files -fileset sim_1 {{C:/Users/LX/Desktop/big experiment/big experiment.srcs/sim_1/new/testbench.v}}
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/LX/Desktop/big experiment/big experiment.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'time_counter' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/LX/Desktop/big experiment/big experiment.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj time_counter_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/LX/Desktop/big experiment/big experiment.srcs/sources_1/new/time_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module time_counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/LX/Desktop/big experiment/big experiment.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 999.020 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/LX/Desktop/big experiment/big experiment.sim/sim_1/behav/xsim'
+"xelab -wto f4beaf5c82e84b1d8ccfc4e8666c42eb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot time_counter_behav xil_defaultlib.time_counter xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: F:/LJXilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto f4beaf5c82e84b1d8ccfc4e8666c42eb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot time_counter_behav xil_defaultlib.time_counter xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.time_counter
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot time_counter_behav
+
+****** Webtalk v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/LX/Desktop/big -notrace
+couldn't read file "C:/Users/LX/Desktop/big": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Wed Jun  2 08:55:30 2021...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 999.020 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/LX/Desktop/big experiment/big experiment.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "time_counter_behav -key {Behavioral:sim_1:Functional:time_counter} -tclbatch {time_counter.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source time_counter.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'time_counter_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:20 . Memory (MB): peak = 999.020 ; gain = 0.000
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+boost::filesystem::remove: 另一个程序正在使用此文件，进程无法访问。: "C:/Users/LX/Desktop/big experiment/big experiment.sim/sim_1/behav/xsim/simulate.log"
+launch_simulation
+Command: launch_simulation 
+boost::filesystem::remove: 另一个程序正在使用此文件，进程无法访问。: "C:/Users/LX/Desktop/big experiment/big experiment.sim/sim_1/behav/xsim/simulate.log"
+launch_simulation
+Command: launch_simulation 
+boost::filesystem::remove: 另一个程序正在使用此文件，进程无法访问。: "C:/Users/LX/Desktop/big experiment/big experiment.sim/sim_1/behav/xsim/simulate.log"
+launch_simulation
+Command: launch_simulation 
+boost::filesystem::remove: 另一个程序正在使用此文件，进程无法访问。: "C:/Users/LX/Desktop/big experiment/big experiment.sim/sim_1/behav/xsim/simulate.log"
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Jun  2 08:59:39 2021...

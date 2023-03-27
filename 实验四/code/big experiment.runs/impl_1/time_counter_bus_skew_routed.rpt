@@ -1,0 +1,15 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Thu Jun  3 19:05:18 2021
+| Host         : LAPTOP-QFOIDU1C running 64-bit major release  (build 9200)
+| Command      : report_bus_skew -warn_on_violation -file time_counter_bus_skew_routed.rpt -pb time_counter_bus_skew_routed.pb -rpx time_counter_bus_skew_routed.rpx
+| Design       : time_counter
+| Device       : 7a100t-csg324
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Bus Skew Report
+
+No bus skew constraints
+

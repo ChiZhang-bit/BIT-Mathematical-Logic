@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Jun  2 08:47:56 2021
+# Process ID: 7820
+# Current directory: C:/Users/LX/Desktop/big experiment
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14820 C:\Users\LX\Desktop\big experiment\big experiment.xpr
+# Log file: C:/Users/LX/Desktop/big experiment/vivado.log
+# Journal file: C:/Users/LX/Desktop/big experiment\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/LX/Desktop/big experiment/big experiment.xpr}
+update_compile_order -fileset sources_1
+file mkdir C:/Users/LX/Desktop/big experiment/big experiment.srcs/sim_1/new
+file mkdir C:/Users/LX/Desktop/big experiment/big experiment.srcs/sim_1/new
+file mkdir C:/Users/LX/Desktop/big experiment/big experiment.srcs/sim_1/new
+file mkdir C:/Users/LX/Desktop/big experiment/big experiment.srcs/sim_1/new
+file mkdir C:/Users/LX/Desktop/big experiment/big experiment.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+file mkdir C:/Users/LX/Desktop/big experiment/big experiment.srcs/sim_1/new
+file mkdir {C:/Users/LX/Desktop/big experiment/big experiment.srcs/sim_1/new}
+close [ open {C:/Users/LX/Desktop/big experiment/big experiment.srcs/sim_1/new/testbench.v} w ]
+add_files -fileset sim_1 {{C:/Users/LX/Desktop/big experiment/big experiment.srcs/sim_1/new/testbench.v}}
+update_compile_order -fileset sim_1
+launch_simulation
+source time_counter.tcl
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+close_sim

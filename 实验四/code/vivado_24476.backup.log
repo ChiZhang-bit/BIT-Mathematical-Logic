@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Thu Jun  3 07:27:15 2021
+# Process ID: 24476
+# Current directory: C:/Users/LX/Desktop/big experiment
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17516 C:\Users\LX\Desktop\big experiment\big experiment.xpr
+# Log file: C:/Users/LX/Desktop/big experiment/vivado.log
+# Journal file: C:/Users/LX/Desktop/big experiment\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/LX/Desktop/big experiment/big experiment.xpr}
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/LX/Desktop/timer.tcl'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/LJXilinx/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 1032.816 ; gain = 0.000
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jun  3 07:31:57 2021...
